@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NumActivity"
+    android:background="@drawable/back_choose">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="100dp"
+        android:layout_width="354dp"
+        android:layout_height="693dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/singleNum"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="练习模式"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/TwoNum"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="单挑模式"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/ThreeNum"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="三人模式"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/FourNum"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="四人模式"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/num_ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        app:layout_anchor="@+id/num_ret"
+        app:layout_anchorGravity="end|bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

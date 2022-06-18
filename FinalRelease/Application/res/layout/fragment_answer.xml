@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="522dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quest"
+            android:layout_width="269dp"
+            android:layout_height="109dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="考题"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.922"
+            tools:layout_editor_absoluteX="-16dp">
+
+            <Button
+                android:id="@+id/chooseA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_normal"
+                android:gravity="center"
+                android:text="使用道具" />
+
+            <Button
+                android:id="@+id/chooseB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_normal"
+
+                android:gravity="center"
+                android:text="使用道具" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.922"
+            tools:layout_editor_absoluteX="-16dp">
+
+            <Button
+                android:id="@+id/chooseC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_normal"
+                android:gravity="center"
+                android:text="使用道具" />
+
+            <Button
+                android:id="@+id/chooseD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_normal"
+
+                android:gravity="center"
+                android:text="使用道具" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

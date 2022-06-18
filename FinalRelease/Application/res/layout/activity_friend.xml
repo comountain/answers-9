@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FriendActivity">
+
+    <ListView
+        android:id="@+id/list_friendsrequest"
+        android:layout_width="413dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ListView
+        android:id="@+id/list_myfirends"
+        android:layout_width="411dp"
+        android:layout_height="395dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_friendsrequest" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:text="好友申请"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="我的好友"
+        app:layout_constraintBottom_toTopOf="@+id/list_myfirends"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_friendsrequest"
+        app:layout_constraintVertical_bias="0.614" />
+
+
+    <EditText
+        android:id="@+id/edit_add_friend"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="添加好友(账号或昵称)"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <Button
+        android:id="@+id/btn_add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="3dp"
+        android:text="添加好友"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_add_friend"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mainchoose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F16C4D"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/mine_to_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="主页" />
+
+        <Button
+            android:id="@+id/mine_to_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+
+            android:gravity="center"
+            android:text="房间" />
+
+        <Button
+            android:id="@+id/mine_to_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="发现" />
+
+        <Button
+            android:id="@+id/mine_to_mess"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+
+            android:gravity="center"
+            android:text="账号" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

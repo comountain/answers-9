@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FieldChooseActivity"
+    android:background="@drawable/back_choose">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="354dp"
+        android:layout_height="563dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/field_1"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="文学"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/field_2"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="历史"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/field_3"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="影视"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/field_4"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="艺术"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/field_5"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="地理"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/field_6"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="科学"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/field_7"
+            android:layout_width="264dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="综合"
+            android:textSize="25sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mainshower"
+        android:layout_width="745dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F16C4D"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/main_mine"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="0sp"
+            android:text="nickname"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/money" />
+
+        <TextView
+            android:id="@+id/main_money"
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="13sp"
+            android:background="@color/white"
+            android:text="money"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="345dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/main_to_market"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="275dp"
+            android:background="@drawable/market" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="275dp"
+            android:gravity="center"
+            android:text="集市"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/back_main"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="113dp" />
+
+        <Button
+            android:id="@+id/btn_start_answer"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="#00000000"
+            android:text="开始游戏"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mainchoose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F16C4D"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_mainshower"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/main_to_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="主页"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/main_to_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+
+            android:gravity="center"
+            android:text="房间" />
+
+        <Button
+            android:id="@+id/main_to_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="发现" />
+
+        <Button
+            android:id="@+id/main_to_mess"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+
+            android:gravity="center"
+            android:text="账号" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_state"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="640dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/main_state_show"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="620dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_mainshower" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

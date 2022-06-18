@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:padding="20dp"
+    >
+
+
+    <EditText
+        android:id="@+id/login_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:hint="请输入账号"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="请输入密码"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:layout_below="@id/login_account"/>
+
+    <Button
+        android:id="@+id/login_start"
+        android:layout_width="187dp"
+        android:layout_height="77dp"
+        android:layout_below="@id/login_password"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:color="#FFFFFF"
+        android:onClick="login"
+        android:text="开始游戏"
+        android:textColor="#cc3300"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:background="@android:color/transparent"
+        android:onClick="back"
+        android:text="返回"
+        android:textColor="#cc3300"
+        android:textSize="30sp" />
+</RelativeLayout>
