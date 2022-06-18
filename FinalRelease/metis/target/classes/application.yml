@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/metis?user=root&password=973717287thy&allowMultiQueries=true
+    username: root
+    password: 973717287thy
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8081
